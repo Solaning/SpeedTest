@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/frame_height"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical"
+            android:text="号码："
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_change_rmg_member_limit_phone"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/frame_height"
+            android:layout_weight="3"
+            android:layout_marginLeft="@dimen/dp_8dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:text="选择转赠限额："
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/sp_select_flow_limit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8dp"
+            android:layout_weight="3"
+            android:background="@drawable/spinner_bg_selector"
+            android:minHeight="46dp"
+            android:prompt="@string/spinner_donation_prompt" />
+    </LinearLayout>
+
+</LinearLayout>

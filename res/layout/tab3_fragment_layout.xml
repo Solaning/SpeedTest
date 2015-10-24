@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_backgroud"
+    tools:context="com.kinth.mmspeed.SpeedMainActivity" >
+
+    <include layout="@layout/common_nav_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="1dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 朋友圈  @2014-07-24 -->
+            <LinearLayout
+                android:id="@+id/llt_moments"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="@dimen/dp_25dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_moment_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/moments"
+                        android:textColor="@drawable/letter_selector"
+                        android:textSize="@dimen/text_size_18" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/rtl_red_point"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_8dp"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/new_notify_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_moments_has_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+
+            <!-- 好友排行榜 -->
+            <LinearLayout
+                android:id="@+id/llt_paihang"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_paihang_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="排行榜"
+                    android:textColor="@drawable/letter_selector"
+                    android:textSize="@dimen/text_size_18" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_flow_groupon"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="@dimen/dp_25dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_flow_groupon_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:duplicateParentState="true"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/flow_groupon"
+                        android:textColor="@drawable/letter_selector"
+                        android:textSize="@dimen/text_size_18" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/iv_flow_groupon_has_new"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_8dp"
+                        android:contentDescription="@string/contentDescription"
+                        android:background="@null"
+                        android:src="@drawable/new_notify_icon"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/llt_flow_share"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_4g_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_flow_share"
+                    android:textColor="@drawable/letter_selector"
+                    android:textSize="@dimen/text_size_18" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_flow_donation"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_flow_pre_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_flow_donation"
+                    android:textColor="@drawable/letter_selector"
+                    android:textSize="@dimen/text_size_18" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_red_packets"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="@dimen/dp_25dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_flow_gift_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="流量红包"
+                    android:textColor="@drawable/letter_selector"
+                    android:textSize="@dimen/text_size_18" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_handle_package"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="@dimen/dp_25dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_prod_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="套餐办理"
+                    android:textColor="@drawable/letter_selector"
+                    android:textSize="@dimen/text_size_18" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_message_center"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_new_icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:duplicateParentState="true"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:text="消息中心"
+                        android:textColor="@drawable/letter_selector"
+                        android:textSize="@dimen/text_size_18" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/iv_message_centre_has_new"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_8dp"
+                        android:contentDescription="@string/contentDescription"
+                        android:background="@null"
+                        android:src="@drawable/new_notify_icon"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_free_erea"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="@dimen/dp_25dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_free_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="免流量专区"
+                    android:textColor="@drawable/letter_selector"
+                    android:textSize="@dimen/text_size_18" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_app_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@drawable/selector_find_cell_bkg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/find_app_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center_vertical"
+                    android:text="应用下载"
+                    android:textColor="@drawable/letter_selector"
+                    android:textSize="@dimen/text_size_18" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_margin="@dimen/dp_8dp"
+                    android:contentDescription="@string/contentDescription"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_arrow_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

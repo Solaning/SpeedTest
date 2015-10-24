@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+<LinearLayout 
+     android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/rectangle_bg_normal"
+    
+    >
+    <ImageView 
+        android:id="@+id/iv_icon"
+          android:layout_width="55dp"
+    android:layout_height="55dp"
+    android:background="@drawable/default_avatar"
+        />
+    <LinearLayout 
+           android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="3"
+    android:orientation="vertical"
+     android:background="@drawable/cell_background"
+        >
+       <TextView 
+        android:id="@+id/tv_item_name"
+       android:layout_width="150dp"
+   	   android:layout_height="26dp" 
+   	   android:paddingLeft="15dp"
+  	   android:gravity="center|left"
+  	   android:textColor="@color/black"
+       android:text=""
+       android:textSize="18sp"
+        />
+        <TextView
+        android:id="@+id/tv_item_phone"
+        android:layout_width="150dp"
+        android:layout_height="26dp"
+        android:paddingLeft="15dp"
+        android:gravity="center|left"
+         android:textSize="13sp"
+        android:text="" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="2"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/btn_recomand"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+         android:padding="20dp"
+        android:gravity="center"
+        android:textColor="@color/set_main"
+        android:background="@drawable/btn_billboard_recomand_4g"
+         android:paddingLeft="20dp"
+         android:textSize="16sp"
+       />
+
+ />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

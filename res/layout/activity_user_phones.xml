@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <include 
+        android:id="@+id/includeCommonNav"
+        layout="@layout/common_nav_image"/>
+
+    <ListView
+        android:id="@+id/lv_phone_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/includeCommonNav"
+        android:layout_marginTop="15dp"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/includeCommonNav"
+        android:layout_centerHorizontal="true"
+        android:text="您尚未绑定电话号码"
+        android:textColor="@color/red"
+        android:textSize="18sp" />
+
+</RelativeLayout>

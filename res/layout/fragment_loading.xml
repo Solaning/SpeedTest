@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/tab_rlt1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:visibility="invisible" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvCurrentState"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tab_rlt1"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="280dp"
+            android:layout_below="@+id/tvCurrentState"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/tab1_clock_iv"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/contentDescription"
+                android:background="@drawable/point_bg_color" />
+
+            <ImageView
+                android:id="@+id/tab1_clock_needle"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/contentDescription"
+                android:background="@drawable/clock_green_neddle" />
+            
+            <TextView
+                android:id="@+id/tv_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="正在查询..."
+                android:textColor="@color/gray_font"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+        

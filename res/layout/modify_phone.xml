@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+      <include
+        android:id="@+id/include_nav"
+        android:layout_width="match_parent"
+        layout="@layout/include_nav" />
+<LinearLayout 
+    android:id="@+id/bind_phone_rlt0"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+       android:layout_below="@+id/about_us_titlebar_ll"
+       android:orientation="vertical"
+    >
+
+       <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_bar_bg_active"
+            android:gravity="left"
+            android:inputType="phone"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/NormalTextSize" />
+</LinearLayout>
+
+</LinearLayout>

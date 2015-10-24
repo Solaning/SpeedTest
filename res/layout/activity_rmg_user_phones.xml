@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/toolbar_bg" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/selector_icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_phone"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/contentDescription"
+            android:padding="5dp"
+            android:src="@drawable/selector_icon_add" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="您尚未绑定电话号码"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        android:textSize="18sp" />
+        
+    <com.kinth.mmspeed.ui.SwipeListView
+        android:id="@+id/swipelistview_phone_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_tip"
+        android:layout_marginBottom="@dimen/dp_5dp"
+        android:layout_marginTop="15dp"
+        android:divider="@null"
+        android:dividerHeight="25dp"
+        android:listSelector="@android:color/transparent" >
+    </com.kinth.mmspeed.ui.SwipeListView>
+
+</RelativeLayout>

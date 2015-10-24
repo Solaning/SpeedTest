@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+<RelativeLayout 
+    android:id="@+id/rlt_tittle_bar"
+     android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/toolbar_bg"
+    >
+    <RelativeLayout
+        android:id="@+id/nav_left_layout"
+        android:layout_width="60.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        >
+		
+        <ImageButton
+            android:id="@+id/nav_left"
+            android:layout_width="60.0dip"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:clickable="true"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/selector_icon_back" 
+            android:onClick="leftBtnOnClick"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav_right_layout"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+        
+        <com.kinth.mmspeed.ui.CircularProgressView
+                android:id="@+id/nav_right_progress"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:visibility="gone"
+                android:contentDescription="@string/contentDescription"
+                android:gravity="center" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nav_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/nav_right_layout"
+        android:layout_toRightOf="@+id/nav_left_layout"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="5.0dp"
+        android:paddingRight="5.0dp"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+    
+</RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlt_tittle_bar"
+        android:orientation="vertical" >
+<RadioGroup
+        android:id="@+id/rpg_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbt_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_billboard"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@null"
+            android:gravity="center"
+            android:text="4G排行榜"
+            android:textSize="18sp"
+            android:textColor="@color/color_text_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/rbt_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+              android:background="@drawable/btn_billboard"
+            android:button="@null"
+            android:drawableTop="@null"
+            android:gravity="center"
+            android:text="流量排行榜"
+             android:textSize="18sp"
+            android:textColor="@color/color_text_radiobutton" />
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:layout_below="@+id/linearLayout1" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_nav"
+        layout="@layout/common_nav_only_back" />
+
+    <ScrollView style="@style/MMScroll" >
+
+        <LinearLayout style="@style/MMBody" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="我们已经发送验证码到您的手机"
+                android:textColor="@color/hint_text_color"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_code"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_bar_bg_active"
+                android:gravity="left|center"
+                android:hint="请输入验证码"
+                android:inputType="phone"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/NormalTextSize" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="收不到验证码？"
+                android:textColor="@color/hint_text_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/MMBigGreenButton"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:text="下一步"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage" >
+
+    <RelativeLayout
+        android:id="@+id/rlt1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/toolbar_bg" >
+
+        <ImageView
+            android:id="@+id/about_us_back_btn"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="leftBtnOnClick"
+            android:src="@drawable/selector_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="状态设置"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/rlt1"
+        android:orientation="vertical" >
+        
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical" >
+        <LinearLayout
+                android:id="@+id/ll_above"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+				<TextView 
+				    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="地理"
+                    android:gravity="center"
+				    />
+                <RadioGroup
+                    android:id="@+id/rgp_position"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" 
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbt_position_auto"
+                        android:checked="true"
+                        android:layout_width="90dp"
+                        style="@style/status_setting_btn_style"
+                        android:text="自动" />
+
+                    <RadioButton
+                        android:id="@+id/rbt_position_in_gd"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        android:padding="5dp"
+                        style="@style/status_setting_btn_style"
+                        android:text="省内" />
+
+                    <RadioButton
+                        android:id="@+id/rbt_position_notin_gd"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        style="@style/status_setting_btn_style"
+                        android:padding="5dp"
+                        android:text="省外" />
+                </RadioGroup>
+            </LinearLayout>
+            
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+				<TextView 
+				    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="网络"
+                    android:gravity="center"
+				    />
+                <RadioGroup
+                    android:id="@+id/rgp_network"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" 
+                    android:layout_marginRight="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbt_network_auto"
+                        android:checked="true"
+                        android:layout_width="90dp"
+                        style="@style/status_setting_btn_style"
+                        android:text="自动" />
+
+                    <RadioButton
+                        android:id="@+id/rbt_network_2g"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        android:padding="5dp"
+                        style="@style/status_setting_btn_style"
+                        android:text="2G" />
+
+                    <RadioButton
+                        android:id="@+id/rbt_network_3g"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        style="@style/status_setting_btn_style"
+                        android:padding="5dp"
+                        android:text="3G" />
+                    <RadioButton
+                        android:id="@+id/rbt_network_4g"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        style="@style/status_setting_btn_style"
+                        android:padding="5dp"
+                        android:text="4G" />
+                    <RadioButton
+                        android:id="@+id/rbt_network_wifi"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        style="@style/status_setting_btn_style"
+                        android:padding="5dp"
+                        android:text="WiFi" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal" >
+				<TextView 
+				    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="时段"
+                    android:gravity="center"
+				    />
+                <RadioGroup
+                    android:id="@+id/rgp_idle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp" >
+
+                    <RadioButton
+                        android:id="@+id/rbt_idletime_auto"
+                        android:checked="true"
+                        android:layout_width="90dp"
+                        style="@style/status_setting_btn_style"
+                        android:text="自动" />
+
+                    <RadioButton
+                        android:id="@+id/rbt_idletime_idle"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        android:padding="5dp"
+                        style="@style/status_setting_btn_style"
+                        android:text="闲时" />
+
+                    <RadioButton
+                        android:id="@+id/rbt_idletime_not_idle"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="100dp"
+                        style="@style/status_setting_btn_style"
+                        android:padding="5dp"
+                        android:text="非闲时" />
+                </RadioGroup>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="“智能查询”是根据您当前的地理位置、网络条件和时段智能计算您的套餐包月量和剩余流量，流量的变化可能由环境变化或者使用流量引起。" />
+<TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="闲时时间段为当天23:00至次日8:00
+                    " />
+                </LinearLayout>
+    </LinearLayout>
+	
+</RelativeLayout>

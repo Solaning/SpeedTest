@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/tab_rlt1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:visibility="invisible" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvCurrentState"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tab_rlt1"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:padding="3dp"
+            android:text="网络状态和地理位置"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/tvCurrentState"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/tab1_clock_iv"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/point_bg_color" />
+
+            <ImageView
+                android:id="@+id/tab1_clock_needle"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/clock_green_neddle" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-30dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_no_reply_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="暂时无法查到您的流量信息。"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

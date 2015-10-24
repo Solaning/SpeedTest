@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  >
+  <ImageView
+      android:id="@+id/iv_page6"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+       android:scaleType="fitXY"
+       />
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_style_experience"
+        android:onClick="startbutton"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_above="@+id/text" />
+<TextView 
+    android:id="@+id/text"
+      android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+    />
+</RelativeLayout>

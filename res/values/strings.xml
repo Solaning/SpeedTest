@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ButtonPanelView_tag_one_button_spacer">ButtonPanelView_tag_one_button_spacer</string>
+    <string name="about_page_url_fmt">http://speedtest.net/mobile/android/about?inapp=1</string>
+    <string name="about_uppercase">ABOUT</string>
+    <string name="admob_test_devices" />
+    <string name="app_name">移动流量仪</string>
+    <string name="auth_client_availability_notification_title">Install/Update/Enable Google Play services</string>
+    <string name="auth_client_play_services_err_notification_msg">Google Play services error</string>
+    <string name="auth_client_requested_by_msg">Requested by %1$s</string>
+    <string name="date_and_time_format">yyyy-MM-dd HH:mm</string>
+    <string name="format_decimal_places_none">0</string>
+    <string name="format_decimal_places_tens">0.0</string>
+    <string name="hosted_by_colon">Hosted by:</string>
+    <string name="internal_ip_colon">Internal IP:</string>
+    <string name="kilo_bits_per_second_abbreviation">kbps</string>
+    <string name="kilo_bytes_per_second_abbreviation">kB/s</string>
+    <string name="kilometers_abbreviation">km</string>
+    <string name="locating_closest_server">Locating closest server...</string>
+    <string name="location_client_ulr_inactive_age_under_13">AgeUnder13</string>
+    <string name="location_client_ulr_inactive_age_unknown">AgeUnknown</string>
+    <string name="location_client_ulr_inactive_unknown_restriction">UnknownRestriction</string>
+    <string name="mega_bits_per_second_abbreviation">Mbps</string>
+    <string name="miles_abbreviation">ms</string>
+    <string name="milliseconds_abbreviation">ms</string>
+    <string name="network_communication_issues">Network communication issues</string>
+    <string name="no_results">"You don't have any Speedtest.net results yet!"</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="not_set">Not Set</string>
+    <string name="ok_uppercase">OK</string>
+    <string name="ping_uppercase">PING</string>
+    <string name="preferred_server_unset">PREFERRED SERVER UNSET</string>
+    <string name="purchase_not_supported">Please upgrade to Google Play client version 3.9.16 or higher to enable purchasing.</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="restart_test">Restart Test</string>
+    <string name="result_delete_message">Are you sure want to delete result?</string>
+    <string name="result_detail">RESULT DETAIL</string>
+    <string name="results_uppercase">RESULTS</string>
+    <string name="saved_as_preferred_server">SAVED AS PREFERRED SERVER</string>
+    <string name="selecting_by_ping_distance">SELECTING BY PING AND DISTANCE</string>
+    <string name="server_location_uppercase">SERVER LOCATION</string>
+    <string name="settings_uppercase">SETTINGS</string>
+    <string name="testing_ping_uppercase">TESTING PING</string>
+    <string name="there_are_no_results_to_export_dot">There are no results to export.</string>
+    <string name="time_column">TIME</string>
+    <string name="type_uppercase">TYPE</string>
+    <string name="upload_uppercase">UPLOAD</string>
+    <string name="version">Version</string>
+    <string name="yes">Yes</string>
+    <string name="yes_">Yes!</string>
+
+    <!-- add by sola -->
+    <string name="about_us_tx">关于我们</string>
+    <string name="tittle_bind_ph">手机号码管理</string>
+    <string name="tittle_add_ph">添加手机号</string>
+    <string name="tittle_edit_ph">详细信息</string>
+    <string name="feedback">意见反馈</string>
+    <string name="user_feedback_contact">联系方式（手机号或者电子邮箱）</string>
+    <string name="optional">可选</string>
+    <string name="user_feedback_content">反馈内容</string>
+    <string name="required">必填</string>
+    <string name="error_download_for_no_sdcard">存储卡已拔出，下载失败</string>
+    <string name="hint_cancel_downlaod">取消下载</string>
+    <string name="error_download_for_unkown_reason">网络异常，下载失败</string>
+    <string name="about_us_now">流量仪为客户提供流量查询、套餐办理和网络测速服务。</string>
+    <string name="share">分享</string>
+    <string name="share_text">分享:</string>
+    <string name="particulars"><u>查看详情</u></string>
+    <string name="package_detail">套餐详情</string>
+    <string name="package_name">套餐名称:</string>
+    <string name="package_total_flow">套餐总流量:</string>
+    <string name="package_left_flow">套餐剩余流量:</string>
+    <string name="package_used_flow">套餐已用流量:</string>
+    <string name="main_tab_ad_green">流量用不完？看看高富帅流量指南</string>
+    <string name="main_tab_ad_orrange">流量不够怎么办？流量加油有妙招！</string>
+    <string name="main_tab_ad_red">流量超了别担心，减损妙招我教你！</string>
+    <string name="getDataFail">获取数据失败，请检查网络连接！</string>
+    <string name="exit">退出</string>
+    <string name="exit_app">你确定退出流量仪?</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="main_tab_text_consult_tip">计费数据有延误，仅供参考。</string>
+    <string name="tv_refresh">刷新</string>
+    <string name="tv_tip_flow_detail">因计费数据有延时，仅供参考，最终以月结数据为准。</string>
+    <string name="flow_query">流量查询</string>
+    <string name="tittle_bind_phone">号码绑定</string>
+    <string name="text_status">状态</string>
+    <string name="flow_query_explain">绑定你的手机号以查看流量使用情况，如果你以后需要修改手机号，请在“我”—“号码管理”功能中修改。</string>
+    <string name="input_phone_number_hint">输入手机号码</string>
+    <string name="input_recomander">输入推荐人号码</string>
+    <string name="input_auth_code_hint">输入短信验证码</string>
+    <string name="input_image_code_hint">输入图片验证码</string>
+    <string name="acquire_auth_code">获取验证码</string>
+    <string name="skip">跳过</string>
+    <string name="submit">提交</string>
+    <string name="order_package">订购套餐</string>
+    <string name="text_recharge_card">充值卡充值</string>
+    <string name="text_recharge_online">在线充值</string>
+    <string name="contentDescription">contentDescription</string>
+    <string name="text_recharge">充值</string>
+    <string name="default_string">default_string</string>
+    <string name="text_please_input_phone_number">请输入手机号码</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="text_share">国内、省内、闲时、3/4G专用流量各类还剩多少，你分清楚了吗？移动流量仪，你贴心的流量管家！查看全省移动号码的2/3/4G/闲时流量，管手机流量，管MiFi流量，管全家人的流量。还有独特网络快速恢复功能，智能网络测速，分享到朋友圈惊呆小伙伴！访问http://ydlly.cn即可下载，AppStore下载搜索“移动流量仪“。</string>
+    <string name="text_share_free">没有WIFI，照样玩得HIGH！流量不足，无须再做“忍者一族”！发福利了，360、广发银行、聚美优品、豌豆荚等众多互联网公司联手广东移动推出免流量服务了。</string>
+    <string name="text_share_download"> 最新限免应用、热门装机必备应有尽有，你想要的应用都在这里。</string>
+    <string name="text_current_flow">当前环境剩余</string>
+    <string name="text_current_average">当前环境日均</string>
+    <string name="text_current_total">当前环境包月量</string>
+    <string name="text_current_exceed">套餐外流量</string>
+    <string name="text_current_away_from_endday">距月结日</string>
+    <string name="exit_tip">您确定要退出？</string>
+    <string name="tips">提示</string>
+      <string name="tv_tip_recomand_4g">我用上4G啦，感觉那叫一个极速狂飙！你也来了解一下吧，点击这里瞬间成为4G达人：http://t.cn/RPotc98。</string>
+    <string name="tv_tip_recomand_lly">安装移动流量仪就可以将自己用不完的流量转赠给别人！还能准确查全省移动号码的各类流量。我已经下载了，你也赶快访问链接ydlly.cn下吧。</string>
+    
+    <string name="tips_wifi_state">当前状态为WiFi，建议选择安全WiFi或者4G网络。</string>
+    <string name="text_tittle_favorable">消息中心</string>
+    <string name ="spinner_donation_prompt">请选择转赠额度</string> 
+    <string-array name="spinner_donation_limit">
+        <item>50MB</item>
+        <item>100MB</item>
+        <item>200MB</item>
+        <item>不限量</item>
+    </string-array>
+    <string name="moments">朋友圈</string>
+    <string name="my_Dynamic">我的动态</string>
+    <string name="flow_map">流量地图</string>
+    
+    <string name="text_flow_share">流量共享</string>
+    <string name="text_flow_donation">流量转赠</string>
+    <string name="menu_settings">设置</string>
+    <string name="text_find">发现</string>
+    <string name="text_me">我</string>
+    <string name="text_my_family">我的家庭</string>
+    <string name="smart_board">智能看板</string>
+    <string name="flow_classify">流量分类</string>
+    <string name="flow_analyze">流量分析</string>
+	<string name="share_speed_test_result">我在用移动流量仪测速，下载速度%1$s，上传速度%2$s，来试一下跟我比比吧！访问http://ydlly.cn即可下载。</string>
+	<string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+	
+	<string name="take_photo">拍照</string>
+    <string name="pick_photo">从相册选择</string>
+    <string name="attachToContact">选择图片</string>
+    <string name="photoPickerNotFoundText1">没有用于图片剪辑的工具</string>
+    <string name="photoPickerNotFoundText">没有用于图片剪辑的工具</string>
+    <string name="network_speed_test">网络测速</string>
+    <string name="speed_test_map">测速地图</string>
+    <string name="network_delay">网络延时</string>
+    <string name="download_speed">下载速度</string>
+    <string name="upload_speed">上传速度</string>
+    <string name="unit_switch">切换单位\nMbps</string>
+    <string name="restart_speed_test">重新测速</string>
+    <string name="flow_groupon">流量团购</string>
+	    
+</resources>

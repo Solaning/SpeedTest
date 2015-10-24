@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 底部菜单页面 -->
+
+    <RadioGroup
+        android:id="@+id/bottomRg"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/abc_ab_bottom_transparent_light_holo"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_green_background"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_one_btn_selector"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="流量管理"
+            android:textSize="15sp"
+            android:textColor="@color/color_radiobutton_black" />
+
+        <RadioButton
+            android:id="@+id/rbTwo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_green_background"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_two_btn_selector"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="网络测速"
+            android:textSize="15sp"
+            android:textColor="@color/color_radiobutton_black" />
+
+        <RadioButton
+            android:id="@+id/rbThree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_green_background"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_three_btn_selector"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/text_find"
+            android:textSize="15sp"
+            android:textColor="@color/color_radiobutton_black" />
+
+        <RadioButton
+            android:id="@+id/rbFour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_green_background"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_four_btn_selector"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="我"
+            android:textSize="15sp"
+            android:textColor="@color/color_radiobutton_black" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_find_has_new"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/contentDescription"
+                android:layout_marginRight="@dimen/dp_8dp"
+                android:layout_marginTop="@dimen/dp_8dp"
+                android:visibility="gone"
+                android:src="@drawable/new_notify_icon"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <com.kinth.mmspeed.ui.CustomViewPager
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomRg"  >
+    </com.kinth.mmspeed.ui.CustomViewPager>
+
+</RelativeLayout>

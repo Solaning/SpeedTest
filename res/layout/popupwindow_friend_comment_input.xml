@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 朋友圈弹出的输入框 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_8dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/friendactivity_comment_detail_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_5dp"
+        android:paddingRight="@dimen/dp_5dp"
+        android:paddingBottom="@dimen/dp_5dp"
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <com.kinth.mmspeed.ui.SmiliesEditText
+            android:id="@+id/et_input_comment"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/dp_8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/input_bar_bg_normal"
+            android:minHeight="56dp"
+            android:maxHeight="100dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_18" >
+        </com.kinth.mmspeed.ui.SmiliesEditText>
+
+        <Button
+            android:id="@+id/bt_send_comment"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:textColor="@android:color/black"
+            android:background="@drawable/friendactivity_comment_button_bg_selector"
+            android:text="发送" />
+    </LinearLayout>
+
+</LinearLayout>

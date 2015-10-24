@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_nav"
+        layout="@layout/include_nav" />
+<RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+         android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:hint="@string/optional"
+            android:text="账号"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|right"
+            android:hint="@string/required"
+            android:textColor="@color/hint_text_color"
+            android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:text=""
+            android:textSize="15dp" />
+    </RelativeLayout>
+      <include layout="@layout/cut_line"/>
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:hint="@string/optional"
+            android:inputType="textAutoComplete"
+            android:text="头像"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:hint="@string/required"
+            android:inputType="phone"
+            android:src="@drawable/signup_change_avatar_bg"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+            android:textSize="15dp" />
+    </RelativeLayout>
+  <include layout="@layout/cut_line"/>
+<RelativeLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+       android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:hint="@string/optional"
+            android:text="昵称"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/hint_text_color"
+            android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+            android:textSize="15dp" />
+    </RelativeLayout>
+      <include layout="@layout/cut_line"/>
+      
+      <Button
+        android:id="@+id/btn_loginout"
+        style="@style/MMBigRedButton"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="logoutOnClick"
+        android:text="注销"
+        android:textSize="20dp" />
+</LinearLayout>

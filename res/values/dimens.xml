@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ad_height">52.0dip</dimen>
+    
+    <dimen name="text_size_18">18.0sp</dimen>
+    <dimen name="text_size_16">16.0sp</dimen>
+    <dimen name="text_size_14">14.0sp</dimen>
+    <dimen name="text_size_12">12.0sp</dimen>
+    <dimen name="dp_8dp">8.0dp</dimen>
+    <dimen name="dp_5dp">5.0dp</dimen>
+    <dimen name="dp_3dp">3.0dp</dimen>
+    <dimen name="dp_10dp">10.0dp</dimen>
+    <dimen name="dp_25dp">25.0dp</dimen>
+    <dimen name="button_height">40.0dp</dimen>
+    <dimen name="frame_height">40.0dp</dimen>
+    
+	<dimen name="NormalTextSize">18.0dip</dimen>
+	<dimen name="NormalButtonHeight">48.0dip</dimen>
+    <dimen name="NormalButtonWidth">80.0dip</dimen>
+    
+    <dimen name="LargePadding">16.0dip</dimen>
+    <dimen name="LargerPadding">24.0dip</dimen>
+	<dimen name="LargestPadding">32.0dip</dimen>
+    <dimen name="SmallerPadding">3.0dip</dimen>
+    <dimen name="MiddlePadding">10.0dip</dimen>
+    <dimen name="NormalPadding">12.0dip</dimen>
+    
+   	<dimen name="ButtonCornerSize">4.0dip</dimen>
+    <dimen name="HintTextSize">14.0dip</dimen>
+    <dimen name="SmallerTextSize">13.0dip</dimen>
+    <dimen name="SmallestTextSize">12.0dip</dimen>
+    
+    <dimen name="GridItemSize">100dp</dimen>
+    <dimen name="GridItemSizeTiny">70dp</dimen>
+    <dimen name="GridItemSpacing">3dp</dimen>
+    <dimen name="itemBorderWidth">1dp</dimen>
+    
+    <dimen name="BitmapMaxWidth">640px</dimen>
+    <dimen name="start_button_size_width">250dp</dimen>
+    <dimen name="start_button_size_height">80dp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_nav"
+        android:layout_width="match_parent"
+        layout="@layout/include_nav_right_text" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/input_bar_bg_active"
+            android:gravity="center"
+            android:inputType="phone"
+            android:hint="请输入您的手机号码"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/NormalTextSize" />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btn_register"
+            style="@style/MMBigGreenButton"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="20dp"
+            android:text="注册" />
+    
+
+</LinearLayout>

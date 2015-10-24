@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/dp_8dp"
+    android:paddingTop="12dp" >
+
+    <Button
+        android:id="@+id/btn_sponsor_invite_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginTop="6.0dip"
+        android:background="@drawable/selector_blue_color"
+        android:paddingBottom="@dimen/dp_8dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="@dimen/dp_8dp"
+        android:text="邀请成员"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_sponsor_change_package"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginTop="6.0dip"
+        android:background="@drawable/selector_blue_color"
+        android:paddingBottom="@dimen/dp_8dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="@dimen/dp_8dp"
+        android:text="变更套餐"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_sponsor_relieve_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6.0dip"
+        android:layout_marginTop="6.0dip"
+        android:background="@drawable/selector_blue_color"
+        android:paddingBottom="@dimen/dp_8dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="@dimen/dp_8dp"
+        android:text="解除群组"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

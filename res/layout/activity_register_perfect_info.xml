@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_nav"
+        android:layout_width="match_parent"
+        layout="@layout/include_nav" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@+id/setinfo_tip"
+            style="@style/MMLineLabel"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="26.0dip"
+            android:text="请完善您的信息"
+            android:textColor="#ff686868"
+            android:textSize="16.0dip" />
+
+        <RelativeLayout
+            android:id="@+id/setinfo_avatar_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/setinfo_avatar"
+                android:layout_width="90.0dip"
+                android:layout_height="90.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/account_avatar_bg"
+                android:paddingBottom="5.0dip"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="6.0dip"
+                android:paddingTop="5.0dip"
+                android:src="@drawable/signup_change_avatar_bg" />
+
+            <ImageView
+                android:id="@+id/setinfo_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/setinfo_avatar"
+                android:layout_alignRight="@+id/setinfo_avatar"
+                android:layout_marginBottom="7.0dip"
+                android:layout_marginRight="7.0dip"
+                android:src="@drawable/signup_avatarcamera_white" />
+        </RelativeLayout>
+
+        <FrameLayout
+            style="@style/MMLineEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/edittext_bg_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/reg_nick"
+                style="@style/MMLineEditText"
+                android:background="@null"
+                android:hint="昵称"
+                android:imeOptions="actionDone"
+                android:paddingLeft="100.0dip" />
+
+            <TextView
+                style="@style/MMLineEditText"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:singleLine="false"
+                android:text="昵称"
+                android:textColor="@color/black"
+                android:textSize="16.0dip" />
+
+            <ImageView
+                android:id="@+id/nick_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="5.0dip"
+                android:src="@drawable/signup_choose" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_finish"
+            style="@style/MMBigGreenButton"
+            android:layout_marginTop="24dp"
+            android:text="完成" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

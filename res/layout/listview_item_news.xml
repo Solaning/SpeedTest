@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:background="@color/white"
+    >
+    <RelativeLayout 
+        android:id="@+id/rlt"
+        android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="4dp"
+        >
+        <TextView
+            android:id="@+id/tv_news_item_tittle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="正在加载..."
+            android:lines="1"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+        <TextView
+        android:id="@+id/tv_news_create_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+         android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_news_item_tittle"
+        android:lines="1"
+        android:text="2014-4-15"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+        <ImageView 
+            android:id="@+id/iv_news_item_icon"
+             android:layout_width="fill_parent"
+        	android:layout_height="160dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginTop="5dp"
+        	android:scaleType="center"
+        	android:layout_below="@+id/tv_news_create_time"
+        	android:padding="5dp"
+            />
+           <TextView
+            android:id="@+id/tv_news_item_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="正在加载...正在加载...正在加载...正在加载...正在加载...正在加载...正在加载...正在加载..."
+            android:layout_below="@+id/iv_news_item_icon"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+         <include layout="@layout/cut_line" />
+    </LinearLayout>
+       
+	</RelativeLayout>

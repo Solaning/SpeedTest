@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    	
+	  <include
+        android:id="@+id/include_nav"
+        layout="@layout/include_nav_right_text_share" />
+	  
+	 <LinearLayout 
+	     android:layout_width="match_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    	  android:layout_marginTop="5dp"
+	     >
+	     <TextView 
+	        android:layout_width="fill_parent"
+    		android:layout_height="50dp"
+    		android:text="请选择推荐方式"
+    		android:gravity="center_vertical"
+    		android:layout_marginLeft="5dp"
+    		android:textStyle="bold"
+    		android:textSize="16sp"
+	         />
+	     <include layout="@layout/cut_line" 
+	         />
+        <RelativeLayout
+                    android:id="@+id/rlt_share_wechat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/cell_background"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="10.0dip"
+                   >
+
+                    <ImageView
+                        android:id="@+id/my_supply_icon"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logo_wechat"
+                         />
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="55.0dip"
+                        android:text="微信分享"
+                        android:textColor="@color/black"
+                        android:textSize="15.0sp" />
+
+                    <ImageView
+                        style="@style/more_arrow_right"
+                        />
+
+                </RelativeLayout>
+                 <include layout="@layout/cut_line" />
+                 <RelativeLayout
+                    android:id="@+id/rlt_share_wechatmoments"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/cell_background"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <ImageView
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logo_wechatmoments"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="55.0dip"
+                        android:text="朋友圈分享"
+                        android:textColor="@color/black"
+                        android:textSize="15.0sp" />
+
+                    <ImageView
+                        style="@style/more_arrow_right"
+                        />
+
+                </RelativeLayout>
+ <include layout="@layout/cut_line" />
+ 
+ <RelativeLayout
+      android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+     >
+      <include layout="@layout/cut_line" 
+       />
+ </RelativeLayout>
+ 
+ <RelativeLayout
+                    android:id="@+id/rlt_share_sina"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/cell_background"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="10.0dip"
+                     >
+
+                    <ImageView
+                        android:id="@+id/temp_iv"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logo_sinaweibo"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="55.0dip"
+                        android:text="新浪微博分享"
+                        android:textColor="@color/black"
+                        android:textSize="15.0sp" />
+
+                    <ImageView
+                        style="@style/more_arrow_right"
+                        />
+
+                </RelativeLayout>
+                <include layout="@layout/cut_line" />
+                
+                 <RelativeLayout
+      android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+     >
+      <include layout="@layout/cut_line" 
+       />
+ </RelativeLayout>
+                 <RelativeLayout
+                    android:id="@+id/rlt_share_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="53dp"
+                    android:background="@drawable/cell_background"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <ImageView
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logo_shortmessage"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="55.0dip"
+                        android:text="短信分享"
+                        android:textColor="@color/black"
+                        android:textSize="15.0sp" />
+
+                    <ImageView
+                        style="@style/more_arrow_right"
+                        />
+
+                </RelativeLayout>
+                <include layout="@layout/cut_line" />
+
+		<RelativeLayout
+		      android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp">
+		     <TextView
+		         android:id="@+id/tv_instruction"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="查看活动规则"
+                        android:textColor="@color/share_blue_text"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="18.0sp" />
+		    
+		</RelativeLayout>
+	 </LinearLayout>
+</LinearLayout>

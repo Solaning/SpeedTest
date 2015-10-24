@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/tab_rlt1"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:visibility="invisible" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="280dp"
+        android:layout_below="@+id/tab_rlt1"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/tab1_clock_iv"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/point_bg_color"
+            android:contentDescription="@string/contentDescription" />
+
+        <ImageView
+            android:id="@+id/tab1_clock_needle"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/clock_green_neddle"
+            android:contentDescription="@string/contentDescription" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:gravity="center"
+        android:text="请在&apos;我&apos;--&apos;号码管理&apos;中绑定手机号码，即可查到您的剩余流量。"
+        android:textColor="@color/gray_font"
+        android:textSize="18sp" />
+
+</RelativeLayout>

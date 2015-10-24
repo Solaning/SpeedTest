@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+<LinearLayout 
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_bg_normal"
+    
+    >
+    <LinearLayout 
+           android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="3"
+    android:orientation="vertical"
+     android:background="@drawable/cell_background"
+        >
+        <TextView 
+        android:id="@+id/tv_item_phone"
+       android:layout_width="150dp"
+   	   android:layout_height="26dp" 
+   	   android:paddingLeft="15dp"
+  	   android:gravity="center|left"
+  	   android:textColor="@color/black"
+       android:text="18565188888"
+       android:textSize="18sp"
+        />
+        <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="150dp"
+        android:layout_height="26dp"
+        android:paddingLeft="15dp"
+        android:gravity="center|left"
+         android:textSize="18sp"
+        android:text="张三" />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="2"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/tv_set_main"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/set_main"
+         android:paddingLeft="20dp"
+         android:textSize="16sp"
+        android:text="设置为主账号" />
+
+ />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

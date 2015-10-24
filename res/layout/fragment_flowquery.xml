@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/rbt_above"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbt_smart_kanban"
+            style="@style/above_btn_style"
+            android:checked="true"
+            android:background="@drawable/selector_left_rect"
+            android:text="@string/smart_board" />
+
+        <RadioButton
+            android:id="@+id/rbt_flow_classify"
+            style="@style/above_btn_style"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/selector_middle_rect"
+            android:text="@string/flow_classify" />
+
+        <RadioButton
+            android:id="@+id/rbt_flow_detail"
+            style="@style/above_btn_style"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/selector_middle_rect"
+            android:text="@string/package_detail" />
+        
+        <RadioButton
+            android:id="@+id/rbt_flow_analyze"
+            style="@style/above_btn_style"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/selector_right_rect"
+            android:text="@string/flow_analyze" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rbt_above" />
+
+</RelativeLayout>

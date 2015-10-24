@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+<RelativeLayout 
+     android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/rectangle_bg_normal"
+    >
+
+    <ImageView
+        android:id="@+id/btn_getContract"
+        style="@style/MMBigRedButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="重新获取通讯录好友" />
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_backgroud" >
+
+    <TextView
+        android:id="@+id/tv_flow_used_that_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10dp"
+        android:padding="@dimen/dp_3dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/tv_flow_used_that_day" />
+
+    <TextView
+        android:id="@+id/tv_flow_analyze_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barChart"
+        android:text="本次开机以来，所用流量如下"
+        android:layout_marginLeft="@dimen/dp_10dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16" />
+
+    <ListView
+        android:id="@+id/listview_app_used_flow_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_flow_analyze_hint"
+        android:layout_marginLeft="@dimen/dp_10dp"
+        android:layout_marginRight="@dimen/dp_10dp"
+        android:layout_marginTop="@dimen/dp_5dp"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="@dimen/dp_10dp"
+        android:paddingRight="@dimen/dp_10dp"
+        android:paddingTop="@dimen/dp_3dp"
+        android:smoothScrollbar="true"
+        tools:listitem="@layout/item_app_used_flow_detail" />
+
+</RelativeLayout>

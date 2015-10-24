@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_nav"
+        layout="@layout/include_nav" />
+
+    <LinearLayout
+        android:id="@+id/bind_phone_rlt0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_us_titlebar_ll"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/search_bar_edit_bg"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_modify_nickName"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:maxLength="40"
+                android:textColor="#000" >
+
+                <requestFocus />
+            </EditText>
+
+            <ImageView
+                android:id="@+id/email_fragment_del_name"
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/sola_close_icon_pressed"
+                android:onClick="clearOnClick"
+                android:src="@drawable/sola_close_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

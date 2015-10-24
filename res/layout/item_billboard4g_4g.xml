@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/rectangle_bg_normal" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/contentDescription"
+        android:background="@drawable/default_avatar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_item_phone"
+            android:layout_width="150dp"
+            android:layout_height="26dp"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:text=""
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_let"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="4G用户"
+            android:textColor="@color/grey_btn_text_color"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_recomand"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_billboard_recomand_4g"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/set_main"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_recomand"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="已推荐，待办理"
+            android:textColor="@color/grey_btn_text_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

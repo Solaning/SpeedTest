@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlt_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/tvCurrentState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:padding="3dp"
+            android:textColor="@color/gray_font" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_below="@+id/tvCurrentState" >
+
+            <ImageView
+                android:id="@+id/tab1_clock_iv"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/contentDescription"
+                android:background="@drawable/point_bg_color" />
+
+            <ImageView
+                android:id="@+id/tab1_clock_needle"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/contentDescription"
+                android:background="@drawable/clock_green_neddle" />
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_above="@+id/tab1_flow_ll"
+            android:layout_alignBottom="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/percent_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="本月已用"
+                android:textColor="@color/gray_font"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/percent_tv"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="0%"
+                android:textColor="@color/gray_font"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tab1_flow_ll"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/contentDescription"
+            android:background="@drawable/tip_ftd"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/tab1_flow_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="63dp"
+            android:layout_above="@+id/tv_tip"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1.25"
+                android:background="@drawable/left_rect_white"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tab1_flow_info1"
+                    android:text="@string/text_current_flow" />
+
+                <TextView
+                    android:id="@+id/current_remain_flow"
+                    style="@style/tab1_flow_info2"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/tab1_flow_info3"
+                    android:text="MB" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/rect_white"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tab1_flow_info1"
+                    android:text="@string/text_current_average" />
+
+                <TextView
+                    android:id="@+id/everyday_flow"
+                    style="@style/tab1_flow_info2"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/tab1_flow_info3"
+                    android:text="MB" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1.45"
+                android:background="@drawable/rect_white"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tab1_flow_info1"
+                    android:text="@string/text_current_total" />
+
+                <TextView
+                    android:id="@+id/tab1_tv_month_all_flow"
+                    style="@style/tab1_flow_info2"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/tab1_flow_info3"
+                    android:text="MB" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1.05"
+                android:background="@drawable/rect_white"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tab1_flow_info1"
+                    android:text="@string/text_current_exceed" />
+
+                <TextView
+                    android:id="@+id/tab1_tv_exceed_flow"
+                    style="@style/tab1_flow_info2"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/tab1_flow_info3"
+                    android:text="MB" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/right_rect_white"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/tab1_flow_info1"
+                    android:text="@string/text_current_away_from_endday" />
+
+                <TextView
+                    android:id="@+id/tab1_tv_remain_days"
+                    style="@style/tab1_flow_info2"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/tab1_flow_info3"
+                    android:text="日" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/main_tab_text_consult_tip"
+            android:textColor="@color/gray_font"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="正在加载..."
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

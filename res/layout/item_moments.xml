@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="8dip" >
+
+    <ImageView
+        android:id="@+id/iv_user_icon"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/image_download_loading_icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SomeBody"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+	        <TextView
+	            android:id="@+id/tv_content"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/selector_moments_content_bg"
+	            android:paddingBottom="5dip"
+	            android:duplicateParentState="true"
+	            android:paddingTop="5dip"
+	            android:textSize="16sp" />
+	        
+	        <ImageView
+	            android:id="@+id/iv_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_5dp"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示更多"
+            android:visibility="gone" />
+
+        <com.kinth.mmspeed.ui.MyGridView
+            android:id="@+id/gridView_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:columnWidth="@dimen/GridItemSizeTiny"
+            android:gravity="center_horizontal"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="auto_fit"
+            android:scrollbarStyle="insideOverlay"
+            android:smoothScrollbar="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp"
+            android:visibility="visible"
+            tools:listitem="@layout/moments_active_gallery_one_image_item" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_publish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="time"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_interaction"
+                android:layout_width="33dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/friendactivity_comment_icon"
+                android:contentDescription="@string/contentDescription" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_comment_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/detail"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llt_like_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_likeicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/contentDescription"
+                    android:src="@drawable/likeicon" />
+
+                <TextView
+                    android:id="@+id/tv_nick_name_of_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

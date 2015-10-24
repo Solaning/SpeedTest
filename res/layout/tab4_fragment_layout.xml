@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:background="@color/white_backgroud"
+    tools:context="com.kinth.mmspeed.SpeedMainActivity" >
+
+    <include layout="@layout/common_nav_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="1dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llt_myacount"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/dp_25dp"
+            android:background="@drawable/selector_find_cell_bkg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/me_account_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="我的账号"
+                android:textColor="@drawable/letter_selector"
+                android:textSize="@dimen/text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_8dp"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_myfamily"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/selector_find_cell_bkg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/me_family_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/text_my_family"
+                android:textColor="@drawable/letter_selector"
+                android:textSize="@dimen/text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_8dp"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llt_bindPhone"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/selector_find_cell_bkg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/me_mobile_manager_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="号码管理"
+                android:textColor="@drawable/letter_selector"
+                android:textSize="@dimen/text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_8dp"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_myactive"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/dp_25dp"
+            android:background="@drawable/selector_find_cell_bkg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/me_active_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="我的动态"
+                android:textColor="@drawable/letter_selector"
+                android:textSize="@dimen/text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_8dp"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_myfriend"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/selector_find_cell_bkg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/me_friend_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="我的好友"
+                android:textColor="@drawable/letter_selector"
+                android:textSize="@dimen/text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_8dp"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llt_setting"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/dp_25dp"
+            android:background="@drawable/selector_find_cell_bkg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/me_setting_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="设置"
+                android:textColor="@drawable/letter_selector"
+                android:textSize="@dimen/text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_8dp"
+                android:contentDescription="@string/contentDescription"
+                android:duplicateParentState="true"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

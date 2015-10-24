@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white_backgroud"
+    android:orientation="vertical"
+    tools:context="com.kinth.mmspeed.SettingActivity" >
+
+    <include layout="@layout/common_nav_image" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25dp"
+        android:layout_marginBottom="@dimen/dp_25dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/About_Us_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/selector_find_cell_bkg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/selector_setting_about_us_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="关于我们"
+                android:textColor="@drawable/letter_selector"
+                android:textSize="@dimen/text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_8dp"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Update_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/dp_25dp"
+            android:background="@drawable/selector_find_cell_bkg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/selector_setting_update_icon" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="新版本检测"
+                android:textColor="@drawable/letter_selector"
+                android:textSize="@dimen/text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_8dp"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Feedback_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/dp_25dp"
+            android:background="@drawable/selector_find_cell_bkg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/selector_setting_feedback_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="意见反馈"
+                android:textColor="@drawable/letter_selector"
+                android:textSize="@dimen/text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/dp_8dp"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/selector_arrow_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

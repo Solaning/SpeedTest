@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navpage"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/toolbar_bg" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/selector_icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8dp"
+        android:layout_marginRight="@dimen/dp_8dp"
+        android:layout_marginTop="@dimen/LargerPadding"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_18" />
+
+    <Button
+        android:id="@+id/btn_go_to_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/dp_8dp"
+        android:layout_marginRight="@dimen/dp_8dp"
+        android:layout_marginTop="@dimen/LargerPadding"
+        android:background="@drawable/selector_blue_color"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    	  <include
+        android:id="@+id/include_nav"
+        layout="@layout/include_nav" />
+    <Button
+        android:id="@+id/btn_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邮件分享" />
+
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信分享" />
+
+    <Button
+        android:id="@+id/btn_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微信分享" />
+
+</LinearLayout>
